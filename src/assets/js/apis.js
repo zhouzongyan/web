@@ -64,6 +64,7 @@ export const DeletePipeline = (id) => Post('/pipeline/delete', { id });
 export const CopyPipeline = (id) => Post('/pipeline/copy', { pipelineId: id });
 export const RebuildVersion = (pipelineVersionId) => Post('/pipeline/rebuild', { pipelineVersionId: pipelineVersionId });
 export const SearchSha = pars => Post('/pipeline/search/sha', pars);
+export const SearchBranch = pars => Post('/pipeline/search/branch', pars);
 //pieplineVersion
 export const DeletePipelineVersion = (id) => Post('/pipelineVersion/delete', { id: id });
 //piepline Vars
